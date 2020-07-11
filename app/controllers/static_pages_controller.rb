@@ -1,5 +1,5 @@
 class StaticPagesController < ApplicationController
 	def main_page
-		@mission_statement = "save the world"
+		@mission_statement = "Start tweeting!"
 	end
 end
