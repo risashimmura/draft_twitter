@@ -1,5 +1,12 @@
-This is the profile show page. 
+This is the profile show page. <br><br>
 
 First name: <%= @profile.first_name %> <br>
 Last name: <%= @profile.last_name %> <br>
-Age: <%= @profile.age %> <br>
+Age: <%= @profile.age %> <br><br>
+
+<ul class="list-group">
+	<% @profile.user.tweets.each do |tweet| %>
+		<li class ="list-group-item"><%= tweet.content %></li>
+	<% end %>
+</ul>
+
