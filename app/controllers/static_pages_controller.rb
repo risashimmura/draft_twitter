@@ -13,6 +13,7 @@ class StaticPagesController < ApplicationController
 	end
 
 	def about_us
+		@some_number = 242
 
 	end
 
